@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+
+	"definitions": {
+		"reference": {
+			"type": "string",
+			"enum": [ "this will be overridden at build time to contain all style property names" ]
+		}
+	},
+
+	"type": "object",
+	"patternProperties": {
+		".*": {
+			"$comment": "Recursively declaring all nodes to either be a(nother) nesting level, or a style property",
+			"anyOf": [
+				{
+					"$comment": "a style property with a value",
+					"type": "object",
+					"properties": {
+						"value": {
+							"anyOf": [
+								{ "$ref": "#/definitions/reference" },
+								{
+									"$comment": "Not every value is a reference. It can also be a plain string.",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"required": [
+						"value"
+					]
+				},
+				{
+					"$comment": "a nesting level (`#` refers to the root schema itself)",
+					"$ref": "#"
+				}
+			]
+		}
+	}
+}

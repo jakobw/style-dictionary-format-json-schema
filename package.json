@@ -1,0 +1,32 @@
+{
+  "name": "style-dictionary-format-json-schema",
+  "version": "1.0.0",
+  "description": "Generate JSON schemas for style-dictionary files to improve text editor support",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "schema.json"
+  ],
+  "scripts": {
+    "test": "jest ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakobw/style-dictionary-format-json-schema.git"
+  },
+  "keywords": [
+    "style-dictionary",
+    "design-tokens",
+    "design-systems",
+    "build-tool"
+  ],
+  "author": "Jakob Warkotsch <j.warkotsch@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/jakobw/style-dictionary-format-json-schema/issues"
+  },
+  "homepage": "https://github.com/jakobw/style-dictionary-format-json-schema#readme",
+  "devDependencies": {
+    "jest": "^26.6.1"
+  }
+}
