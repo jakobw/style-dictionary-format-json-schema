@@ -28,5 +28,8 @@
   "homepage": "https://github.com/jakobw/style-dictionary-format-json-schema#readme",
   "devDependencies": {
     "jest": "^26.6.1"
+  },
+  "peerDependencies": {
+    "style-dictionary": "2.x"
   }
 }
