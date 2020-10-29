@@ -22,7 +22,7 @@ StyleDictionary.registerFormat({
  
  Then, you'll be able to use the new `jsonSchema` (or whatever name you gave it) format as you would any other Style Dictionary [format](https://amzn.github.io/style-dictionary/#/formats?id=formats).
  
- ## Configuring text editors to use the JSON schema
+## Configuring text editors to use the JSON schema
  
  Letting the text editor know which JSON files to apply the schema to requires some configuration.
 
